@@ -7,19 +7,19 @@
 
 (require 'color-theme)
 (require 'color-theme-solarized)
-
 ;; if you don't customize it, this is the theme you get
 (setq-default custom-enabled-themes '(color-theme-solarized))
 
 ;; set dark background
-(set-frame-parameter nil 'background-mode 'dark)
+;;(set-frame-parameter nil 'background-mode 'dark)
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
   "Forcibly load the themes listed in `custom-enabled-themes'."
   (dolist (theme custom-enabled-themes)
     (unless (custom-theme-p theme)
-      (load-theme theme t)))
+      ;;(load-theme theme)))
+	  (color-theme-solarized)))
 	  
   (custom-set-variables `(custom-enabled-themes (quote ,custom-enabled-themes))))
 
