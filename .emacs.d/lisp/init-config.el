@@ -67,5 +67,25 @@
   (lambda ()
     ;; Preferred comment style
     (setq comment-start "/* "
-          comment-end " */")))		  
+          comment-end " */")))
+
+;; Config auto-complete
+(ac-config-default)
+(defcustom ac-modes
+  '(emacs-lisp-mode
+    lisp-mode
+    lisp-interaction-mode
+    c-mode cc-mode c++-mode
+    java-mode clojure-mode scala-mode
+    scheme-mode
+    ocaml-mode tuareg-mode
+    perl-mode cperl-mode python-mode ruby-mode
+    ecmascript-mode javascript-mode js-mode js2-mode php-mode css-mode
+    makefile-mode sh-mode fortran-mode f90-mode ada-mode
+    xml-mode sgml-mode)
+  "Major modes `auto-complete-mode' can run on."
+  :type '(repeat symbol)
+  :group 'auto-complete)
+
+		  
 (provide 'init-config)
