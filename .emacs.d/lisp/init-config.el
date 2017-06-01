@@ -26,5 +26,7 @@
 
 ;;
 
+;; config evil-matchit
+(global-evil-matchit-mode 1)
 
 (provide 'init-config)
