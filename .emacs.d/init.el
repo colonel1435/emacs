@@ -9,5 +9,6 @@
 (require 'init-themes)
 (require 'init-config)
 (require 'init-ui)
+(require 'init-git)
 
 (provide 'init)
