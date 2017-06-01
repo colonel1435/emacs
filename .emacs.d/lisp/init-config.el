@@ -93,5 +93,15 @@
   :type '(repeat symbol)
   :group 'auto-complete)
 
-		  
+;; Confit switch windows
+(global-set-key (kbd "C-S-j") 'windmove-down)
+(global-set-key (kbd "C-S-k") 'windmove-up)
+(global-set-key (kbd "C-S-h") 'windmove-left)
+(global-set-key (kbd "C-S-l") 'windmove-right)
+	
+(global-set-key (kbd "M-1") 'delete-other-windows)
+(global-set-key (kbd "M-2") 'split-window-below)
+(global-set-key (kbd "M-3") 'split-window-right)
+(global-set-key (kbd "M-0") 'delete-window)
+	
 (provide 'init-config)
