@@ -1,3 +1,9 @@
+;; init-config
+
+;; Config ido
+(ido-mode t)
+(setq ido-save-directory-list-file nil)
+
 ;; auto load evil-mode
 (evil-mode 1)
 
